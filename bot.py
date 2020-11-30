@@ -1,6 +1,7 @@
 import requests
 import urllib
 from bs4 import BeautifulSoup
+import os
 
 def getTier(Summoner):
     Tier = []
@@ -349,4 +350,4 @@ if __name__ == "__main__":
     # 객체를 생성
     client = chatbot()
     # TOKEN 값을 통해 로그인하고 봇을 실행
-    client.run('token')
+    client.run(os.environ['token'])
